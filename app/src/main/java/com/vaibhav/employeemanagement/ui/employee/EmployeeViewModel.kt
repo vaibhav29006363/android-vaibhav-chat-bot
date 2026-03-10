@@ -67,14 +67,24 @@ class EmployeeViewModel(private val repository: EmployeeRepository) : ViewModel(
     fun updateEmployee(employee: Employee) {
         viewModelScope.launch {
             _operationResult.value = Resource.Loading
-            _operationResult.value = repository.updateEmployee(employee)
+            val result = repository.updateEmployee(employee)
+            _operationResult.value = when (result) {
+                is Resource.Success -> Resource.Success(Unit)
+                is Resource.Error -> Resource.Error(result.message)
+                Resource.Loading -> Resource.Loading
+            }
         }
     }
 
     fun deleteEmployee(employee: Employee) {
         viewModelScope.launch {
             _operationResult.value = Resource.Loading
-            _operationResult.value = repository.deleteEmployee(employee)
+            val result = repository.deleteEmployee(employee)
+            _operationResult.value = when (result) {
+                is Resource.Success -> Resource.Success(Unit)
+                is Resource.Error -> Resource.Error(result.message)
+                Resource.Loading -> Resource.Loading
+            }
         }
     }
 }

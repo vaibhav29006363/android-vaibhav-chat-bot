@@ -24,6 +24,7 @@
                 android:layout_gravity="center_vertical"
                 android:text="@string/filter_by_department"
                 android:textAppearance="?attr/textAppearanceBody1"
+                android:paddingStart="8dp"
                 android:paddingEnd="8dp" />
 
             <Spinner
