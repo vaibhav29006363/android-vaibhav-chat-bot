@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChatBot</string>
+    <string name="hint_message">Type a message…</string>
+    <string name="send_button_description">Send message</string>
+    <string name="typing_indicator">ChatBot is typing…</string>
+    <string name="welcome_message">Hello! I\'m ChatBot 🤖 How can I help you today?</string>
+</resources>
