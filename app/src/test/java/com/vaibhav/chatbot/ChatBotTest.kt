@@ -113,8 +113,8 @@ class ChatBotTest {
     }
 
     @Test
-    fun `blank input returns the exact prompt message`() {
-        val response = chatBot.generateResponse("   ")
+    fun `tab and newline whitespace input returns the exact prompt message`() {
+        val response = chatBot.generateResponse("\t\n\t")
         assertEquals("Please type a message so I can help you!", response)
     }
 }
