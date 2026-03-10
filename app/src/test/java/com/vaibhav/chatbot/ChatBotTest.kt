@@ -1,6 +1,7 @@
 package com.vaibhav.chatbot
 
 import com.vaibhav.chatbot.bot.ChatBot
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
@@ -109,5 +110,11 @@ class ChatBotTest {
     fun `weather request returns non-empty response`() {
         val response = chatBot.generateResponse("what is the weather today")
         assertTrue(response.isNotBlank())
+    }
+
+    @Test
+    fun `tab and newline whitespace input returns the exact prompt message`() {
+        val response = chatBot.generateResponse("\t\n\t")
+        assertEquals("Please type a message so I can help you!", response)
     }
 }
