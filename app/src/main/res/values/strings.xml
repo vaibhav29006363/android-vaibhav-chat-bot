@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Employee Management</string>
+    <string name="employees">Employees</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="edit_employee">Edit Employee</string>
+    <string name="employee_details">Employee Details</string>
+    <string name="delete_employee">Delete Employee</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="no_employees">No employees found</string>
+    <string name="all_departments">All Departments</string>
+    <string name="filter_by_department">Filter:</string>
+    <string name="operation_successful">Operation completed successfully</string>
+
+    <!-- Employee fields -->
+    <string name="employee_name">Name</string>
+    <string name="employee_email">Email</string>
+    <string name="employee_department">Department</string>
+    <string name="employee_role">Role</string>
+    <string name="employee_hire_date">Hire Date (YYYY-MM-DD)</string>
+    <string name="employee_id_format">Employee ID: %d</string>
+
+    <!-- Detail labels -->
+    <string name="contact_information">Contact Information</string>
+    <string name="employment_information">Employment Information</string>
+    <string name="label_email">Email: </string>
+    <string name="label_department">Department: </string>
+    <string name="label_role">Role: </string>
+    <string name="label_hire_date">Hire Date: </string>
+
+    <!-- Validation errors -->
+    <string name="error_name_required">Name is required</string>
+    <string name="error_email_required">Email is required</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_department_required">Department is required</string>
+    <string name="error_role_required">Role is required</string>
+    <string name="error_hire_date_required">Hire date is required</string>
+
+    <!-- Dialogs -->
+    <string name="delete_confirmation">Are you sure you want to delete %s?</string>
+</resources>
